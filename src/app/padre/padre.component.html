@@ -1,0 +1,5 @@
+<p [ngClass]="{rojo: salida === 'Hola mundo'}">{{salida | tuberiaPrueba:"Adios":"Mundo":"Cruel"}}</p>
+<hijo [entrada]="'Hola mundo'" (salida)="cambiarTexto($event)">
+    <a class="pulsa" href="#">Pulsame :)</a>
+    <a class="noPulsa" href="#">No me pulses :(</a>
+</hijo>
